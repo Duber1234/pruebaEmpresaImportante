@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
 <?php $this->load->view('globals/scripts'); ?>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+<link rel="shortcut icon" href="https://sigma-studios.s3-us-west-2.amazonaws.com/test/sigma-logo.png"/>
 <!-- mi codigo va aqui -->
 <?php $data=json_decode(file_get_contents("https://sigma-studios.s3-us-west-2.amazonaws.com/test/colombia.json"),true); ?>
 
