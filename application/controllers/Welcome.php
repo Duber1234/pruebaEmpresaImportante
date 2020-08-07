@@ -27,6 +27,13 @@ class Welcome extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$page_data['page_title']="Prueba de desarrollo sigma";
+		if(isset($_POST) && !empty($_POST)){
+			$this->crud_model->contacto_save();
+		}
+		$this->load->view('welcome_message',$page_data);
+	}
+	public function validar_email(){
+		$this->crud_model->validar_email($_POST['email']);
 	}
 }
